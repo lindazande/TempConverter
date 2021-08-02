@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             let fahrenheitTempString = String(format: "%.2F", convertTempFrom(celsius: celsiusTemp).fahrenheit)
             convertedTempString = fahrenheitTempString + " ºF"
         default:
-            let kelvinTempString = String(format: "%.2K", convertTempFrom(celsius: celsiusTemp).kelvin)
+            let kelvinTempString = String(format: "%.2F", convertTempFrom(celsius: celsiusTemp).kelvin)
             convertedTempString = kelvinTempString + " ºK"
            
         }
@@ -67,7 +67,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "tempConverter"{
         let vc = segue.destination as! infoViewController
         vc.infoText = "My home task was to create\na temperature converter and\nthe result is:"
-        vc.appDescText = "\(String(describing: convertedTempLabel.text))"
+        vc.appDescText = "\(celsiusLabel.text!) = \(String(describing: convertedTempLabel.text!))"
     }
     }
 
