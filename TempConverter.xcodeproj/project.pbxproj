@@ -11,10 +11,10 @@
 		BA30893E26B4566000C6FF2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30893D26B4566000C6FF2E /* SceneDelegate.swift */; };
 		BA30894026B4566000C6FF2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30893F26B4566000C6FF2E /* ViewController.swift */; };
 		BA30894326B4566000C6FF2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA30894126B4566000C6FF2E /* Main.storyboard */; };
-		BA30894526B4566200C6FF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA30894426B4566200C6FF2E /* Assets.xcassets */; };
 		BA30894826B4566200C6FF2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA30894626B4566200C6FF2E /* LaunchScreen.storyboard */; };
 		BA30895326B547AB00C6FF2E /* AppearenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30895226B547AB00C6FF2E /* AppearenceViewController.swift */; };
 		BA30895526B5485600C6FF2E /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA30895426B5485600C6FF2E /* infoViewController.swift */; };
+		BA30895626B7E75B00C6FF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA30894426B4566200C6FF2E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA30894826B4566200C6FF2E /* LaunchScreen.storyboard in Resources */,
-				BA30894526B4566200C6FF2E /* Assets.xcassets in Resources */,
+				BA30895626B7E75B00C6FF2E /* Assets.xcassets in Resources */,
 				BA30894326B4566000C6FF2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

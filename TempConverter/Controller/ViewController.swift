@@ -46,28 +46,29 @@ class ViewController: UIViewController {
         var convertedTempString = ""
         switch tempSegmentControl.selectedSegmentIndex {
         case 0:
-            let fahrenheitTempString = String(format: "%.2F", convertedTempFrom(celsius: celsiusTemp).fahrenheit)
+            let fahrenheitTempString = String(format: "%.2F", convertTempFrom(celsius: celsiusTemp).fahrenheit)
             convertedTempString = fahrenheitTempString + " ºF"
         default:
-            let kelvinTempString = String(format: "%.2K", convertedTempFrom(celsius: celsiusTemp).kelvin)
+            let kelvinTempString = String(format: "%.2K", convertTempFrom(celsius: celsiusTemp).kelvin)
             convertedTempString = kelvinTempString + " ºK"
            
         }
         convertedTempLabel.text = convertedTempString
     }
-    func convertedTempFrom(celsius: Int) -> (fahrenheit: Double, kelvin: Double){
+    func convertTempFrom(celsius: Int) -> (fahrenheit: Double, kelvin: Double){
         let  fahrenheit = (Double(celsius) * 9 / 5) + 32
         let kelvin = Double(celsius) + 273.15
         return (fahrenheit, kelvin)
     }
-}
+
 // MARK: - Navigation
 
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "tempConverter"{
         let vc = segue.destination as! infoViewController
-        vc.infoText = "Temp Converter app helps to convert temperature"
-        vc.appDescText = "This is my home project"
+        vc.infoText = "My home task was to create\na temperature converter and\nthe result is:"
+        vc.appDescText = "\(String(describing: convertedTempLabel.text))"
     }
     }
 
+}
